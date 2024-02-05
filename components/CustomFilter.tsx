@@ -47,7 +47,7 @@ export default function CustomFilter({ title, options }: CustomFiltersProps) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Listbox.Options className="custom-filter__options">
+            <Listbox.Options className="custom-filter__options  z-20 ">
               {/* Map over the options and display them as listbox options */}
               {options.map((option) => (
                 <Listbox.Option
