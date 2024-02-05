@@ -4,7 +4,7 @@ import axios from "axios";
 export async function fetchCars(filters: FilterProps) {
   const { manufacturer, fuel, limit, model, year } = filters;
   const headers = {
-    "X-RapidAPI-Key": "d76e530e14msh99293d0de8a297cp1904e9jsn553eff0a2fcc",
+    "X-RapidAPI-Key": `${process.env.NEXT_PUBLIC_RAPID_API_KEY}`,
     "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
   };
 
