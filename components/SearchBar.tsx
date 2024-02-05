@@ -68,7 +68,7 @@ const SearchBar = () => {
           src={"/model-icon.png"}
           width={25}
           height={25}
-          className="absolute w-[20px] h-[20px]"
+          className="absolute w-[20px] h-[20px] ml-4"
           alt="car model"
         />
         <input
@@ -76,7 +76,7 @@ const SearchBar = () => {
           name="model"
           value={model}
           onChange={(e) => setModel(e.target.value)}
-          placeholder="Tiguan"
+          placeholder="Tiguan..."
           className="searchbar__input"
         />
         <SearchButton otherClasses="sm:hidden" />
